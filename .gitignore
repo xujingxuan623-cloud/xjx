@@ -1,0 +1,59 @@
+# --- MATLAB ---
+# 自动备份文件（每次编辑都会生成，绝不该入库）
+*.asv
+*.autosave
+*.m~
+*.slx~
+*.mdl~
+*.bak
+*.orig
+*~
+
+# 编译产物与缓存
+*.mex*
+*.oct
+slprj/
+codegen/
+*.exe
+*.dll
+*.o
+*.obj
+
+# Simulink 缓存
+*.slxc
+*.slxc.tmp
+*.slreqx
+*.sldd.bak
+
+# --- 数据文件 ---
+# 仿真数据通常体积很大，需要共享时另外说明或走 Git LFS
+*.mat
+*.slx
+*.mdl
+*.mlapp
+*.fig
+
+# 但是保留 Simulink 模型文件和常用的示例数据
+!**/models/*.slx
+
+# --- 输出与临时文件 ---
+*.png
+*.jpg
+*.pdf
+*.eps
+*.tmp
+output/
+results/
+tmp/
+
+# --- 系统与环境 ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# --- MATLAB 环境配置（含个人信息与路径，不应共享）---
+# 如需共享配置，请手动整理后另建文件
+*.prj
+*.mlsettings
